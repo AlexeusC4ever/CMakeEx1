@@ -1,8 +1,0 @@
-C:/Users/user/Desktop/ex1_with_cmd/ex1/build/CMakeFiles/edit_cache.dir
-C:/Users/user/Desktop/ex1_with_cmd/ex1/build/CMakeFiles/rebuild_cache.dir
-C:/Users/user/Desktop/ex1_with_cmd/ex1/build/lib/CMakeFiles/lib.dir
-C:/Users/user/Desktop/ex1_with_cmd/ex1/build/lib/CMakeFiles/edit_cache.dir
-C:/Users/user/Desktop/ex1_with_cmd/ex1/build/lib/CMakeFiles/rebuild_cache.dir
-C:/Users/user/Desktop/ex1_with_cmd/ex1/build/src/CMakeFiles/edit_cache.dir
-C:/Users/user/Desktop/ex1_with_cmd/ex1/build/src/CMakeFiles/main.dir
-C:/Users/user/Desktop/ex1_with_cmd/ex1/build/src/CMakeFiles/rebuild_cache.dir

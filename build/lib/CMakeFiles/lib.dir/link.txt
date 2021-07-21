@@ -1,2 +1,0 @@
-D:\minGW\mingw32\bin\ar.exe qc liblib.a CMakeFiles/lib.dir/interdiff.cpp.obj
-D:\minGW\mingw32\bin\ranlib.exe liblib.a
