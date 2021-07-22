@@ -21,12 +21,15 @@ int main() {
 	}
 	
 	std::cout << "\n";
-	
-	Interdiff in(points);
-	
-	std::vector<float> sample_x = { 53, 2, -23, -123, 21, -3, 1,321 ,-321, 12, 121 };
-	
-	for(float ex: sample_x){
-		std::cout << "f'(" << ex << ") = " << in.diff(ex) << std::endl;
+	try{
+		Interdiff in(points);
+		
+		std::vector<float> sample_x = { 53, 2, -23, -123, 21, -3, 1,321 ,-321, 12, 121 };
+		
+		for(float ex: sample_x){
+			std::cout << "f'(" << ex << ") = " << in.diff(ex) << std::endl;
+		}
+	} catch(...) {
+		std::cout << "Error was occured" << std::endl;
 	}
 }
