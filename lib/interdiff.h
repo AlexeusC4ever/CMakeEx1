@@ -1,9 +1,7 @@
-#ifndef _DIFFINTER_H_
-#define _DIFFINTER_H_
+#ifndef DIFFINTER_H_
+#define DIFFINTER_H_
 
 #include <vector>
-#include <iostream>
-#include <algorithm>
 
 struct Point {
 	float x;
@@ -11,23 +9,12 @@ struct Point {
 };
 
 struct Interdiff {
-	Interdiff(std::vector<Point>& points_) : points(points_) {
-		try{
-			if(points.size() < 2) throw "Not enough points";
-		}
-		catch(const char* a){
-			std::cout << a << std::endl;
-			throw;
-		}
-		std::sort(points.begin(), points.end(), [](Point a, Point b){
-			return a.x < b.x;
-		});
-	}
-	float interpolation(float x);
-	float diff(float x);
+	Interdiff(const std::vector<Point>& points_);
+	float interpolation(float x) const;
+	float diff(float x) const;
 
 private:
 	std::vector<Point> points;
 };
 
-#endif  /*_DIFFINTER_H_*/
+#endif  /*DIFFINTER_H_*/

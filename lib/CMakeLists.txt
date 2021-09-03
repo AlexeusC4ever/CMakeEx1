@@ -6,8 +6,3 @@ set_target_properties(
 	CXX_STANDART 11
 	CXX_STANDART_REQUIRED ON
 )
-target_include_directories(
-	lib
-	PRIVATE			
-	${CMAKE_CURRENT_BINARY_DIR}
-)

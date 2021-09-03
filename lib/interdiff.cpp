@@ -1,7 +1,20 @@
 #include "interdiff.h"
-#include <iostream>
+#include <vector>
+#include <algorithm>
 
-float Interdiff::interpolation(float x) {
+Interdiff::Interdiff(const std::vector<Point>& points_) : points(points_) {
+	try {
+		if (points.size() < 2) throw "Not enough points";
+	}
+	catch (...) {
+		throw;
+	}
+	std::sort(points.begin(), points.end(), [](Point a, Point b) {
+		return a.x < b.x;
+		});
+}
+
+float Interdiff::interpolation(float x) const {
 	float result = 0;
 	size_t i = 0;
 	size_t mount = points.size();
@@ -21,7 +34,7 @@ float Interdiff::interpolation(float x) {
 
 }
 
-float Interdiff::diff(float x) {
+float Interdiff::diff(float x) const {
 	float result = 0;
 	size_t i = 0;
 	size_t mount = points.size();
