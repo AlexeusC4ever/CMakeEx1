@@ -1,8 +1,6 @@
 #ifndef DIFFINTER_H_
 #define DIFFINTER_H_
 
-#include <vector>
-
 struct Point {
 	float x;
 	float y_x;

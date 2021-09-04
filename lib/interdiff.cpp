@@ -1,6 +1,6 @@
-#include "interdiff.h"
 #include <vector>
 #include <algorithm>
+#include "interdiff.h"
 
 Interdiff::Interdiff(const std::vector<Point>& points_) : points(points_) {
 	try {

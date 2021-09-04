@@ -1,6 +1,7 @@
-#include "interdiff.h"
 #include <iostream>
 #include <fstream>
+#include <vector>
+#include "interdiff.h"
 
 int main() {
 	std::ifstream fin;
